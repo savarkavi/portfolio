@@ -36,7 +36,7 @@ const Contact = () => {
   };
 
   return (
-    <div className=" w-full h-screen bg-black relative">
+    <div className=" w-full h-screen bg-black relative" id="contact">
       <div className="w-full h-full relative">
         <Image
           src="/contact.png"

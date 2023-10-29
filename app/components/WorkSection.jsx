@@ -17,7 +17,7 @@ const WorkSection = () => {
   const ref = useRef();
 
   return (
-    <motion.div className="h-full bg-black w-full border-b" ref={ref}>
+    <motion.div className="h-full bg-black w-full border-b" ref={ref} id="work">
       <div className=" w-full h-full">
         <div className="h-full flex justify-center relative overflow-hidden pt-10">
           <div className="flex flex-col gap-24 items-center w-full h-full">
@@ -27,12 +27,12 @@ const WorkSection = () => {
             >
               Projects
             </motion.h2>
-            <div className="w-full bg-zinc-950 h-full z-[10] flex justify-center items-center p-8">
+            <div className="w-full bg-zinc-950 h-full z-[10] xl:p-8">
               <Carousel
-                className="w-full h-[500px] max-w-[1500px] mx-auto"
+                className="w-full h-[300px] xl:h-[500px] max-w-[1500px] mx-auto"
                 showIndicators={false}
               >
-                <div className="flex flex-col lg:flex-row items-center h-full justify-between gap-8 px-8">
+                <div className="flex flex-col lg:flex-row items-center h-full gap-2 sm:gap-8 p-8">
                   <div className="relative w-full h-[200px] lg:h-[500px] rounded-xl">
                     <Image
                       src="/jasper.png"
@@ -47,7 +47,7 @@ const WorkSection = () => {
                     >
                       Jasper
                     </h2>
-                    <p className="text-white text-left max-w-[800px]">
+                    <p className="text-white text-left max-w-[800px] text-sm">
                       Jasper is an advanced note taking app inspired by notion.
                       Made with NextJs, it has features like authentication
                       system, CRUD operations to create, delete and update
@@ -77,7 +77,7 @@ const WorkSection = () => {
                     </div>
                   </div>
                 </div>
-                <div className="flex flex-col lg:flex-row items-center h-full justify-between gap-8 px-8">
+                <div className="flex flex-col lg:flex-row items-center h-full gap-2 sm:gap-8 p-8">
                   <div className="relative w-full h-[200px] lg:h-[500px] rounded-xl">
                     <Image
                       src="/ecom.png"
@@ -92,7 +92,7 @@ const WorkSection = () => {
                     >
                       Ecomboard
                     </h2>
-                    <p className="text-white text-left max-w-[800px]">
+                    <p className="text-white text-left max-w-[800px] text-sm">
                       A MERN fullstack admin dashboard, this project showcase
                       the advanced backend data modelling and reflecting it into
                       a beautiful layout to the frontend. It has every
@@ -117,7 +117,7 @@ const WorkSection = () => {
                     </div>
                   </div>
                 </div>
-                <div className="flex flex-col lg:flex-row items-center h-full justify-between gap-8 px-8">
+                <div className="flex flex-col lg:flex-row items-center h-full justify-between gap-8 p-8">
                   <div className="relative w-full h-[200px] lg:h-[500px] rounded-xl">
                     <Image
                       src="/cinemania.png"
@@ -133,7 +133,7 @@ const WorkSection = () => {
                     >
                       CineMania
                     </h2>
-                    <p className="text-white text-left max-w-[800px]">
+                    <p className="text-white text-left max-w-[800px] text-sm">
                       CineMania Zone is purely a frontend application to
                       showcase the ability to make beautiful designs and working
                       with API&apos;s. From sorting movies based on genre to

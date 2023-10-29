@@ -26,9 +26,9 @@ const AboutSection = () => {
     "Based in New Delhi, India, a creative and logical-oriented Software Engineer with a deep interest in tech, programming, Game-dev and AI. Proven track record of creating and implementing successful front-end applications. Looking to bring my skills to a tech company with global reach.";
 
   return (
-    <motion.div className="h-full bg-black w-full" ref={ref}>
+    <motion.div className="h-full bg-black w-full" ref={ref} id="about">
       <div className="h-full flex justify-center relative overflow-hidden">
-        <motion.div className="flex flex-col gap-10 items-center mt-[200px]">
+        <motion.div className="flex flex-col gap-10 items-center mt-[50px] px-4 xl:mt-[200px]">
           <motion.h2
             style={{ x: titleScroll }}
             className={`text-orange-500 text-6xl sm:text-7xl md:text-8xl xl:text-9xl ${myFont.className}`}
@@ -43,7 +43,7 @@ const AboutSection = () => {
             </motion.p>
             <div className="flex flex-col gap-3 justify-center items-center">
               <span className="text-orange-500 text-xl">My Tech Stack:</span>
-              <div className="flex gap-4 bg-white p-2 rounded-xl">
+              <div className="flex gap-4 bg-white p-2 rounded-xl flex-wrap">
                 <Image src="/react.png" alt="react" width={40} height={40} />
                 <Image src="/nextjs.png" alt="nextjs" width={40} height={40} />
                 <Image src="/type.png" alt="type" width={40} height={40} />

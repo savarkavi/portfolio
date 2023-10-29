@@ -5,6 +5,7 @@ import { navlinks } from "@/utils/Navlinks";
 import { Instagram, Linkedin, MenuIcon, Twitter } from "lucide-react";
 import { motion } from "framer-motion";
 import Sidebar from "./Sidebar";
+import Link from "next/link";
 
 const linksVariant = {
   hover: {
@@ -21,16 +22,17 @@ const Navbar = () => {
 
   const renderedLinks = navlinks.map((link) => {
     return (
-      <motion.div
-        key={link.name}
-        className="text-white"
-        variants={linksVariant}
-        whileHover="hover"
-      >
-        <span className="cursor-pointer font-medium text-lg hover:text-orange-500">
-          {link.name}
-        </span>
-      </motion.div>
+      <Link href={`#${link.link}`} key={link.name}>
+        <motion.div
+          className="text-white"
+          variants={linksVariant}
+          whileHover="hover"
+        >
+          <span className="cursor-pointer font-medium text-lg hover:text-orange-500">
+            {link.name}
+          </span>
+        </motion.div>
+      </Link>
     );
   });
 
