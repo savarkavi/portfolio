@@ -31,8 +31,9 @@ const WorkSection = () => {
               <Carousel
                 className="w-full h-[300px] xl:h-[500px] max-w-[1500px] mx-auto"
                 showIndicators={false}
+                emulateTouch={false}
               >
-                <div className="flex flex-col lg:flex-row items-center h-full gap-2 sm:gap-8 p-8">
+                <div className="flex flex-col lg:flex-row items-center h-full sm:gap-8 p-8">
                   <div className="relative w-full h-[200px] lg:h-[500px] rounded-xl">
                     <Image
                       src="/jasper.png"
@@ -41,7 +42,7 @@ const WorkSection = () => {
                       className="rounded-xl object-contain"
                     />
                   </div>
-                  <div className="flex flex-col gap-8">
+                  <div className="flex flex-col gap-4 lg:gap-8">
                     <h2
                       className={`${myFont.className} text-orange-500 text-5xl`}
                     >
@@ -77,7 +78,7 @@ const WorkSection = () => {
                     </div>
                   </div>
                 </div>
-                <div className="flex flex-col lg:flex-row items-center h-full gap-2 sm:gap-8 p-8">
+                <div className="flex flex-col lg:flex-row items-center h-full sm:gap-8 p-8">
                   <div className="relative w-full h-[200px] lg:h-[500px] rounded-xl">
                     <Image
                       src="/ecom.png"
@@ -86,7 +87,7 @@ const WorkSection = () => {
                       className="rounded-xl object-contain"
                     />
                   </div>
-                  <div className="flex flex-col gap-8">
+                  <div className="flex flex-col gap-4 lg:gap-8">
                     <h2
                       className={`${myFont.className} text-orange-500 text-5xl`}
                     >
@@ -117,7 +118,7 @@ const WorkSection = () => {
                     </div>
                   </div>
                 </div>
-                <div className="flex flex-col lg:flex-row items-center h-full justify-between gap-8 p-8">
+                <div className="flex flex-col lg:flex-row items-center h-full sm:gap-8 p-8">
                   <div className="relative w-full h-[200px] lg:h-[500px] rounded-xl">
                     <Image
                       src="/cinemania.png"
@@ -127,7 +128,7 @@ const WorkSection = () => {
                     />
                   </div>
 
-                  <div className="flex flex-col gap-8">
+                  <div className="flex flex-col gap-4 lg:gap-8">
                     <h2
                       className={`${myFont.className} text-orange-500 text-5xl`}
                     >
